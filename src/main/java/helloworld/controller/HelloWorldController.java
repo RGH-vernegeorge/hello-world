@@ -15,7 +15,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/greet", method = RequestMethod.GET)
     public ResponseEntity<Greet> sayHi(){
-        Greet greet = new Greet("Hi!");
+        Greet greet = new Greet("Hi!!!");
         ResponseEntity<Greet> response = new ResponseEntity<Greet>(greet, HttpStatus.OK);
         return response;
     }
